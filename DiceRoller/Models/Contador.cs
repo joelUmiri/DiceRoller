@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiceRoller
+namespace DiceRoller.Models
 {
     internal class Contador
     {
@@ -14,25 +14,17 @@ namespace DiceRoller
         public int Limite;
         public int Venceu;
 
-       
+
         //Comparar se o selecionado é igual a faceParaCima do dado do jogador 
         //Se for igual o jogador venceu.
         //Somo um ponto
         //Se ele tinha vencido o duelo anterior, soma 1 na sequencia
         //Se não, 0 a sequencia
 
-            public void Jogar(Dice dadoJogador, int numeroSelecionado)
-            {
-                if (numeroSelecionado = dadoJogador.FaceParaCima)
-                {
-                Sequencia++;
-                Pontos++;
-                }
-            else
-            {
-                Sequencia = 0;
-            }
-            }
+        public void Jogar(Dice dadoJogador, int numeroSelecionado)
+        {
+           
         }
     }
+}
 

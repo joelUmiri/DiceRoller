@@ -1,4 +1,6 @@
-﻿namespace DiceRoller
+﻿using DiceRoller.Models;
+
+namespace DiceRoller
 
 {
     public partial class MainPage : ContentPage
